@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>VIDEO JUEGOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header id="cabecera" class="espaciado">
+        <div class="contenedor">
+            <nav class="menu-barra">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logotipo.png" class="img_ajustarancho">
+                    </a>
+                </div> <!-- logo -->
+
+                <button id="btn-blanco-negro" class="icono-blanco-negro">
+                    <i class="fas fa-adjust"></i> <!-- Icono del botón -->
+                    <span class="descripcion-blanco-negro">Blanco y Negro</span>
+                  </button>
+                  
+                <button id="btn-aumentar-zoom" class="zoom-button">
+                    <i class="fas fa-search-plus"></i>
+                    <span>Aumentar</span>
+                </button>
+
+                <button id="btn-disminuir-zoom" class="zoom-button">
+                    <i class="fas fa-search-minus"></i>
+                    <span>Disminuir</span>
+                </button>  
+                  
+
+                <ul class="menu-opciones">
+                    <div class="menu-items">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="#">NOSOTROS</a></li>
+                        <li><a href="#tienda">PRODUCTOS</a></li>
+                        <li><a href="#pie">CONTÁCTANOS</a></li>
+                    </div> <!-- menu-items -->
+                </ul> <!-- menu-opciones -->
+            </nav><!-- menu-barra -->
+        </div> <!-- contenedor -->
+    </header> <!-- cabecera -->
+
+    <section id="inicio">
+        <div class="inicio-video"> <!-- caja padre -->
+            <video loop autoplay class="video-responsive">
+                <source src="videos/video_juego.mp4" type="video/mp4" id="video-fondo">
+            </video>
+            <div class="inicio-video-descripcion"> <!-- caja hijo -->                
+                <h1>
+                    Descubre tu<br>
+                    próxima aventura <br>
+                    gaming
+                </h1>
+            </div> <!-- inicio-video-descripcion -->
+        </div> <!-- inicio-video -->
+    </section> <!-- inicio -->
+
+    <section id="somos" class="espaciado">
+        <div class="contenedor">
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <p>Somos un apasionado equipo de amantes de los videojuegos, dedicados a brindarte las últimas noticias, reseñas,
+                análisis y contenido emocionante sobre el mundo del gaming.
+            
+                Nos enorgullece ofrecerte información detallada sobre los juegos más populares, desde los títulos más aclamados
+                hasta las gemas ocultas que no te puedes perder. Nuestro objetivo es mantenerte actualizado y proporcionarte todo lo
+                que necesitas saber para tomar decisiones informadas sobre tus próximas aventuras virtuales.</p>
+            <div class="fila">
+                <div class="columna">
+                    <img src="imagenes/videojuego1.jpg" class="img_ajustarancho">
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/videojuego2.jpg" class="img_ajustarancho">
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/videojuego3.jpg" class="img_ajustarancho">
+                </div> <!-- columna -->
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </section> <!-- nosotros -->
+
+    <section id="resaltante" class="espaciado">
+        <div class="contenedor">
+            <p class="texto_enorme">
+                ¡SOMOS TU <br> 
+                <span class="texto_resaltado">MEJOR</span> OPCIÓN <br>
+                EN VIDEOJUEGOS <br>
+                <span class="texto_resaltado">DESDE 2020!</span> 
+            </p> <!-- texto_enorme -->
+        </div> <!-- contenedor -->
+    </section> <!-- resaltante -->
+
+    <section id="historia" class="espaciado">
+        <div class="contenedor">
+            <h2>HISTORIA DE PIXELQUEST GAMING</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic distinctio odit deleniti. Mollitia, laudantium iste, deserunt quisquam, eaque ducimus hic exercitationem voluptatum eos adipisci tempora impedit pariatur. Culpa maxime quisquam corrupti ratione temporibus harum quos aut soluta, incidunt architecto quibusdam totam! Nisi id repellat excepturi porro nobis, recusandae aperiam et iusto nostrum corporis dolorum dolores a. Laboriosam, dicta natus, tempore neque officiis pariatur laudantium ratione nam aliquid laborum at corporis enim in qui quibusdam harum reiciendis dolor unde itaque explicabo optio necessitatibus magnam exercitationem omnis. Accusantium dolores eos aut ea!</p>
+        </div> <!-- contenedor -->
+    </section> <!-- historia -->
+
+    <section id="carta_juegos" class="espaciado">
+        <div class="contenedor">
+            <h2>GÉNEROS</h2>
+            <div class="fila">
+                <div class="columna">
+                    <img src="imagenes/juego_1.png" class="img_ajustarancho">
+                    <h3>JUEGOS DE ACCIÓN</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, adipisci nisi nihil accusamus voluptatibus architecto rem sit.</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/juego_2.png" class="img_ajustarancho">
+                    <h3>JUEGOS DE AVENTURA</h3> 
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quod tempora harum nemo dolore magni commodi ducimus!</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/juego_3.png" class="img_ajustarancho">
+                    <h3>JUEGOS DE ESTRATEGIA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque provident repellat blanditiis voluptas veniam laboriosam numquam.</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/juego_4.png" class="img_ajustarancho">
+                    <h3>JUEGOS DE DEPORTES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint placeat quis vel voluptas quibusdam dolores exercitationem repellendus?</p>
+                </div> <!-- columna -->
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </section> <!-- carta -->
+
+    <section id="nuestro-juego" class="espaciado">
+        <div class="contenedor">
+            <h2>NUESTROS JUEGOS</h2>
+            <p>En nuestra página, encontrarás una amplia selección de juegos que abarcan diferentes géneros y plataformas. Ofrecemos
+            experiencias inmersivas con gráficos impresionantes y jugabilidad cautivadora. Trabajamos con desarrolladores de calidad
+            para brindarte juegos entretenidos a precios accesibles. Ya seas un jugador casual o apasionado, ¡tenemos algo para ti!
+            Explora nuestra colección y descubre nuevas emociones gaming. ¡Únete a nosotros y diviértete sin límites!</p>
+        </div> <!-- contenedor -->
+    </section> <!-- nuestro-cafe -->
+
+    <section id="online" class="espaciado">
+        <div class="contenedor">
+            <h2>TIENDA EN LÍNEA</h2> 
+            <p>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </p>
+            <div class="fila">
+                <div class="columna">
+                    <div class="caja-overflow">
+                        <img src="imagenes/tienda_1.jpg" class="img_ajustarancho">
+                    </div> <!-- caja-overflow -->
+                    <h3>Minecraft</h3>
+                    <p>S/100.00</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <div class="caja-overflow">
+                        <img src="imagenes/tienda_2.jpg" class="img_ajustarancho">
+                    </div> <!-- caja-overflow -->
+                    <h3>Call of Duty: Modern Warfare II</h3>
+                    <p>S/150.00</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <div class="caja-overflow">
+                        <img src="imagenes/tienda_3.jpg" class="img_ajustarancho">
+                    </div> <!-- caja-overflow -->
+                    <h3>Dragon Ball: The Breakers</h3>
+                    <p>S/90.00</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <div class="caja-overflow">
+                        <img src="imagenes/tienda_4.jpg" class="img_ajustarancho">
+                    </div> <!-- caja-overflow -->
+                    <h3>Evil Dead: The Game</h3>
+                    <p>S/80.00</p>
+                </div> <!-- columna -->
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </section> <!-- online -->
+
+    <section id="servicios" class="espaciado">
+        <div class="contenedor">
+            <h2>SERVICIOS AL CLIENTE</h2>
+            <div class="fila">
+                <div class="columna">
+                    <img src="imagenes/cliente_1.png" class="img_ajustarancho">
+                    <h3>
+                        <span class="texto_semibold">SOPORTE TÉCNICO</span>
+                    </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias accusantium adipisci iusto quisquam culpa illo sequi tempore dicta aspernatur dolor!</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/cliente_2.png" class="img_ajustarancho">
+                    <h3>
+                        <span class="texto_semibold">ASESORAMIENTO DE COMPRA</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eaque non ea accusamus minima adipisci culpa quae, dolores aut aperiam!</p>
+                </div> <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/cliente_3.png" class="img_ajustarancho">
+                    <h3>
+                        <span class="texto_semibold">COMUNIDAD</span>
+                    </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sed voluptatum nam vitae incidunt, distinctio adipisci numquam dignissimos excepturi molestias.</p>
+                </div>  <!-- columna -->
+                <div class="columna">
+                    <img src="imagenes/cliente_4.png" class="img_ajustarancho">
+                    <h3>
+                        <span class="texto_semibold">CONTENIDO ADICIONAL</span>
+                    </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sed voluptatum nam vitae incidunt, distinctio adipisci numquam dignissimos excepturi molestias.</p>
+                </div>  <!-- columna -->
+            </div> <!-- fila -->        
+        </div> <!-- contenedor -->
+    </section> <!-- servicios -->
+    
+
+    <footer id="pie">
+        <div class="contenedor">
+            <div class="fila">
+                <div class="copyright">
+                    &copy; 2023 | Jorge Francisco Fernandez Ñaupari, All Rights Reserved
+                </div> <!-- copyright -->
+                <div class="correo-telefono">
+                    <a href="mailto:jorgeherandez@gmail.com?subject=Quiero hacer un pedido">
+                        <i class="fa-solid fa-envelope"></i> pedidos@pixelquestgaming.pe
+                    </a>
+                    <a href="tel: 999999999">
+                        <i class="fa-solid fa-phone"></i> (+51) 01 708-0000
+                    </a>
+                </div> <!-- correo-telefono -->
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div> <!-- redes-sociales -->
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </footer> <!-- pie -->
+
+    <!-- Botón para ir rápidamente al inicio de la página -->
+    <a href="#" id="scroll-arriba">
+        <i class="fa-solid fa-angle-up"></i>
+    </a> <!-- scroll-arriba -->   
+
+</body>
+</html>

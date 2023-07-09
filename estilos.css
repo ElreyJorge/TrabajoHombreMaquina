@@ -1,0 +1,460 @@
+/* Enlazar la hoja de estilos con la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Marcellus&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&display=swap');
+
+/*Declaración de variables*/
+:root {
+    /*Variables para la paleta de colores*/
+    --color-blanco : #fff;
+    --color-gris : #262626;
+    --color-cremita : #FBF2E4;
+    --color-marron-claro : #ac7e68;
+    --color-marron-oscuro : #997f63;
+
+    /*Variables para nuestras fuentes */
+    --fuente-principal: 'Roboto Flex', sans-serif;
+    --fuente-titulos: 'Bevan'; 
+    --fuente-subtitulos : 'Marcellus', serif;
+}
+
+* {
+    /* Eliminar el margen y espaciado predeterminado de los elementos de la página */
+    margin: 0;
+    padding: 0;
+    /*Establece el "width/height" como el ancho/altura total del elemento,
+    incluyendo el padding y el border */
+    box-sizing: border-box;    
+}
+
+/* -----------------------------------
+    Selectores de estilo de tipo HTML 
+   ----------------------------------- */
+   
+html {
+    /* Suaviza el desplazamiento del scroll en la página */
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: var(--fuente-principal); /* Tipo de letra */
+}
+
+h1 {
+    font-family: var(--fuente-titulos); /* Tipo de letra */
+    font-size: 70px; /* Tamaño de letra */
+    font-weight: 200; /* Grosor de la letra */
+}
+
+h2 {
+    font-family: var(--fuente-subtitulos); /* Tipo de letra */
+    font-size: 37px; 
+    font-weight: 200;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--fuente-subtitulos);  /* Tipo de letra */
+    font-size: 21px;
+    font-weight: 400;    
+}
+
+p {
+    line-height: 1.5;  /* Interlineado */
+    padding-bottom: 10px;
+}
+
+img {
+    display: block; /* Eliminar el margen inferior que agrega automáticamente debajo de la imagen */
+}
+
+video {
+    display: block; /* Eliminar el margen inferior que agrega automáticamente debajo del video */
+}
+
+iframe {
+    display: block; /* Eliminar el margen inferior que agrega automáticamente debajo del video */
+}
+
+/* -----------------------------------
+    Selectores de estilo de tipo ID 
+   ----------------------------------- */
+#cabecera {
+    background-color: var(--color-marron-claro); /* Color de fondo */
+    color: var(--color-blanco); /* Color del texto */  
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Posicionamiento pegajoso */
+    position: sticky;
+
+    /* Coordenadas de posicionamiento */
+    top: 0px; 
+
+    /* Posicionar la caja, se posicione encima de las demás */
+    z-index: 1000;
+}
+
+#somos {
+    background-color: var(--color-cremita); /* Color de fondo */
+    color: var(--color-gris); /* Color del texto */  
+}
+
+#resaltante {
+    background-image: url(./imagenes/fondo_juego.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+#historia {
+    background-color: var(--color-gris); /* Color de fondo */
+    color: var(--color-blanco); /* Color del texto */
+}
+
+#carta_juegos {
+    background-color: var(--color-blanco); /* Color de fondo */
+    color: var(--color-gris); /* Color del texto */
+    text-align: center;
+}
+
+#carta_juegos img {
+    transition: all 0.5s ease-in-out;
+}
+
+#carta_juegos img:hover{
+    filter: brightness(108%);
+    transform: rotate(3deg);
+}
+
+#nuestro-juego {
+    background-color: var(--color-marron-claro); /* Color de fondo */
+    color: var(--color-blanco); /* Color del texto */
+}
+
+#online {
+    background-color: var(--color-blanco); /* Color de fondo */
+    color: var(--color-gris); /* Color del texto */
+    text-align: center;
+}
+
+#online img:hover {
+    filter: grayscale(120%);
+    transform: scale(112%);
+}
+
+#online img {
+    transition: all 0.5s ease-in-out;
+}
+
+#servicios {
+    background-color: var(--color-gris); /* Color de fondo */
+    color: var(--color-blanco); /* Color del texto */
+}
+
+#servicios img {
+    border-radius: 50%;
+}
+
+#servicios h3, #servicios p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#pie {
+    background-color: var(--color-marron-claro); /* Color de fondo */
+    color: var(--color-blanco); /* Color del texto */  
+    padding-top: 45px;
+    padding-bottom: 45px;
+    line-height: 36px;
+}
+
+#pie a {
+    color: var(--color-blanco); /* Color del texto */  
+    text-decoration: none; /* Quitar el subrayado */
+    margin-left: 10px;
+}
+
+#pie .redes-sociales i {
+    font-size: 32px;
+}
+
+#pie .fila {
+    justify-content: space-between;
+}
+
+
+#online .contenedor i {
+    font-size: 25px;
+}
+
+#barra-ubicacion {
+    background-color: var(--color-cremita);
+    color: var(--color-gris);
+    text-align: center;
+}
+
+#nosotros {
+    background-color: var(--color-blanco);
+    color: var(--color-gris);
+    text-align: center;
+}
+
+#espacios{
+    background-color: var(--color-blanco);
+    color: var(--color-gris);
+}
+
+#scroll-arriba{
+    /* Posicionamiento del botón */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    /* Decoración del botón */
+    width: 45px;
+    height: 45px;
+    line-height: 45px; /* Centrar el ícono verticalmente */
+    text-align: center; /* Centrar el ícono horizontalmente */
+    background-color: var(--color-marron-claro);
+    color: var(--color-blanco);
+    border: var(--color-blanco) 2px solid;
+    border-radius: 50%;
+
+    /* Transición */
+    transition: all 0.3s ease-in-out;
+}
+
+#scroll-arriba:hover{
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
+    transform: translateY(-5px);
+    box-shadow: -3px 8px 25px 0px rgba(30, 27, 23, 0.6);
+}
+
+#redes>.contenedor>.fila>.columna {
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: var(--color-cremita);
+    color: var(--color-gris);
+
+    text-align: center;
+}
+
+/* -----------------------------------
+    Selectores de estilo de tipo CLASS 
+   ----------------------------------- */
+.espaciado {
+    /* Espacio entre el borde y el contenido */
+    padding-top: 90px; /* Espacio superior entre el borde y el contenido */
+    padding-bottom: 90px; /* Espacio inferior entre el borde y el contenido */
+}
+
+.contenedor {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fila {
+    display: flex; /* Activa Flexbox */
+    flex-direction: row; /* Hace que los elementos hijos se muestre uno al lado del otro (fila) */
+    
+    /* Anular el padding izquierdo/derecho de la primera y ultima columna */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna {
+    flex-basis: 0px; /* Reduce al mínimo el ancho del contenedor */
+    flex-grow: 1; /* Hace que la caja crezca proporcionalmente */
+
+    /* Espaciado a la izquierda y derecha del contenedor */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna-1 {
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.img_ajustarancho {
+    width: 100%; /* Ajusta el ancho al 100% del tamaño de su contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente al ancho */
+}
+
+.texto_enorme {
+    font-family: 'Marcellus', serif;
+    font-size: 60px;
+    font-weight: 1000px;
+    line-height: 1.5;
+    color: var(--color-gris);
+}
+
+.texto_resaltado {
+    color: var(--color-marron-oscuro);
+    font-weight: 700;
+    text-shadow: 3px 5px 2px rgba(0,0,0,0.6);
+}
+
+.texto_resaltadoblog {
+    color: var(--color-marron-claro);
+}
+
+.texto_semibold {
+    color: var(--color-marron-claro);
+    font-weight: 700;
+}
+
+.caja-overflow{
+    overflow: hidden;
+}
+
+.inicio-video {
+    position: relative;
+}
+
+.inicio-video-descripcion {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    color: var(--color-blanco);
+    text-shadow: 3px 5px 2px rgba(0,0,0,0.6);
+}
+
+.inicio-video-descripcion h1 {
+    font-size: 45px; /* Tamaño de letra */
+}
+
+.video-responsive {
+    aspect-ratio: 16 / 9; /* 16 / 9, 4 / 3, 2º / 9 */
+    width: 100%;
+    height: auto;
+}
+
+.galeria-foto {
+    position: relative;
+}
+
+
+/* Estilos para configurar la barra de menú */
+
+.logo {
+    width: 150px;
+}
+
+.menu-barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-opciones {
+list-style-type: none; /* Quita las viñetas*/
+}
+
+.menu-opciones a{
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.menu-items li{
+    padding: 10px 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-items li:hover {
+    background-color: var(--color-gris);
+    border-radius: 25px;
+}
+
+
+
+a, a:active {
+	color: var(--color-gris);
+	text-decoration: none;
+	font-size: 20px;
+}
+
+/* Estilo inicial para las imágenes */
+img {
+    transition: filter 0.3s ease-in-out; /* Agregamos una transición suave */
+  }
+  
+  /* Cambiar a blanco y negro al agregar la clase "blanco-negro" */
+  .blanco-negro img {
+    filter: grayscale(100%);
+  }
+  
+  /* Cambiar el color marrón a escala de grises */
+  .blanco-negro {
+    --color-marron-claro: #999;
+    --color-marron-oscuro: #888;
+  }
+
+  .blanco-negro video {
+    filter: grayscale(100%);
+  }
+
+  .icono-blanco-negro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 5px; /* Ajusta el margen inferior según tu preferencia */
+  }
+  
+  .icono-blanco-negro i {
+    font-size: 24px; /* Ajusta el tamaño del icono según tu preferencia */
+  }
+  
+  .descripcion-blanco-negro {
+    text-align: center;
+    font-size: 14px; /* Ajusta el tamaño del texto según tu preferencia */
+    margin-top: 5px; /* Ajusta el margen superior según tu preferencia */
+    margin-bottom: 0; /* Establece el margen inferior a 0 */
+  }
+
+  
+  /* Estilos del botón de aumentar y disminuir zoom */
+.zoom-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zoom-button i {
+    font-size: 24px;
+}
+
+.zoom-button span {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Resto de tus estilos */
